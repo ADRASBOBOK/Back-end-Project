@@ -1,0 +1,638 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Montserrat:wght@300;400;700;900&display=swap');
+
+:root{
+    --charm: 'Charm', cursive;
+    --mont: 'Montserrat', sans-serif;
+    
+    --color-primario: #e3dcc7;
+}
+
+/* Normalizadores */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--mont);
+    /* outline: 2px dashed purple; */
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin: 0px 5%;
+    padding: 5px;
+}
+.btn{
+    /* width: 150px; */
+    /* height: 30px; */
+    font-size: 20px;
+    border-style: none;
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.btncita{
+    display: block;
+    margin: auto;
+}
+h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+/* Generales */
+body{
+    width: 100%;
+    background-color: var(--color-primario);
+}
+header{
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    padding: 2%;
+    top: 0px;
+    background-color: var(--color-primario);
+    border-bottom: 1px solid black;
+    z-index: 2000;
+    
+    /* Flex */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error-txt{
+    width: 30vh;
+    color: #721c24;
+    padding: 8px 10px;
+    text-align: center;
+    background: #fdd2d2;
+    border: 1px solid #ff8888;
+    margin: auto;
+    display: none;
+}
+.success-txt{
+    width: 30vh;
+    color: #3e721c;
+    padding: 8px 10px;
+    text-align: center;
+    background: #def8d7;
+    border: 1px solid #baf3cd;
+    margin: 10px auto;
+    display: none;
+}
+
+/* Logo */
+.logo{
+    font-family: var(--charm);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+/* ----Login popup----*/
+.popup{
+    width: 90vw;
+    padding: 1vh;
+    text-align: center;
+    background-color: var(--color-primario);
+    border: 1px solid black;
+    box-shadow:  9px 9px 90px rgba(0,0,0,.5);
+    z-index: 4000;
+    display: none;
+}
+.popflex{
+    /* flex */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.center{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+}
+#cerrar{
+    position: absolute;
+    right: 1%;
+    top: 5%;
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    border-style: none;
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.lineasep{
+    width: 90%;
+    border-bottom: 1px solid rgb(196, 175, 85);
+}
+.popup ::placeholder{
+    padding-left: 4%;
+}
+.popup h2,
+.popup p{
+    margin: 10px 0px;
+}
+.popup input{
+    display: block;
+    margin: 10px auto;
+}
+.login-reg{
+    padding: 4%;
+}
+
+/* ----Main---- */
+.main{
+    display: block;
+    padding-top: 100px;
+}
+.main h1{
+    font-size: 30px;
+    text-align: center;
+}
+.main p{
+    font-size: 18px;
+    padding: 4%;
+}
+.main button{
+    display: block;
+    text-align: center;
+}
+
+/* ----Section Judit---- */
+.sobremi{
+    position: relative;
+    padding: 4% ;
+}
+.sobremi h1{
+    font-family: var(--charm);
+    font-size: 50px;
+    text-align: center;
+}
+.sobremi article{
+    width: 100%;
+}
+.sobremi figure img{
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.sobremi p{
+    padding: 2%;
+    font-size: 17px;
+}
+
+/* ----Section Contacto---- */
+.contacto{
+    padding: 5%;
+}
+.artcont{
+    text-align: center;
+}
+.inframe{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+form p{
+    padding: 5px;
+}
+.contacto ul{
+    width: 100%;
+    text-align: center;
+    padding: 4%;
+}
+.contacto ul li{
+    width: 100%;
+    list-style: none;
+}
+
+
+/* Section tarifas */
+.tarifas{
+    width: 100%;
+}
+.tarifas h1{
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+.flexc{
+    width: 100%;
+
+    /* flex */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    width: 90%;
+    margin: 5%;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow:  9px 9px 1px rgba(0,0,0,.9);
+}
+.card article,
+.card button{
+    margin: 10px;
+}
+.card img{
+    margin-top: 30px;
+}
+.card figure{
+    width: 84%;
+    margin: auto;
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer h2{
+    text-align: center;
+    padding: 10%;
+}
+.footer{
+    padding: 5%;
+}
+footer li{
+    width: 90%;
+    padding: 5% 0px;
+    margin: auto;
+}
+footer ul{
+    text-align: center;
+    list-style: none;
+    padding: 5px;
+}
+
+/* ----------- Registro ------------ */
+
+.signup{
+    display: absolute;
+    width: 100%;
+    margin-top: 100px;
+}
+.signup h2{
+    text-align: center;
+    padding-top: 30px;
+}
+.signup input,
+.signup button{
+    display: block;
+    margin: 10px auto;
+    border-style: none;
+    border: 1px solid black;
+}
+.signup button{
+    background-color: transparent;
+    padding: 2px;
+}
+
+
+
+/* ----Conectado---- */
+.citas{
+    width: 100vw;
+    padding: 5%;
+    margin-top: 100px;
+    
+    /* Flex */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.citas div{
+    width: 100%;
+    height: 50%;
+}
+.cita textarea{
+    display: inline-block;
+}
+#listaId table{
+    display: table;
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.citas tr{
+    width: 100%;
+}
+.citas th,td{
+    width: 100px;
+    padding: 0.5rem;
+}
+td:first-child,
+td:last-child,
+.admin td:nth-child(2),
+.admin td:nth-child(3){
+    text-align: center;
+}
+.usuario td:first-child,
+.usuario td:last-child{
+    margin: auto 0px;
+}
+.usuario td:nth-child(2){
+    word-wrap: break-word;  
+}
+tr{
+    display: flex;
+    justify-content: space-around;
+}
+.citas form select,
+.citas form textarea,
+.citas form input,
+#btnDelete{
+    display: block;
+    margin: 10px auto;
+    border-style: none;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.citas form select,
+.citas form textarea{
+    width: 100%;
+}
+
+/* ----Admin---- */
+.admin th{
+    width: 100px;
+}
+.admin td{
+    width: 100px;
+    word-wrap: break-word;  
+}
+.admin h3{
+    text-align: center;
+}
+
+/* ----Denegado---- */
+.denegado{
+    margin: 50vh auto;
+    padding: 5%;
+}
+
+
+
+
+
+
+/* -------------    768p    ---------- */
+
+@media (min-width: 768px){
+
+/* Logo */
+.logo{
+    font-size: 50px;
+}
+
+/* Popup */
+.popup{
+    width: 40vw;
+}
+
+/* ----Main---- */
+.main{
+    display: block;
+    padding: 150px 0px 100px;
+}
+.main h1{
+    font-size: 50px;
+    text-align: center;
+}
+/* ----Sobre mi---- */
+.sobremi h1{
+    font-size: 80px;
+    position: absolute;
+    top: -35px;
+    right: 15%;
+}
+.sobremi figure img{
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+
+/* ----Section Contacto---- */
+.contacto h1{
+    font-size: 50px;
+}
+.contacto p{
+    font-size: 25px;
+}
+.contacto ul{
+    width: 100%;
+    padding: 4%;
+}
+.contacto ul li{
+    width: 100%;
+}
+
+
+/* Section tarifas */
+.flexc{
+    /* flex */
+    justify-content: space-around;
+}
+.card{
+    width: 30%;
+    margin: 0%;
+}
+
+/* Footer */
+footer h2{
+    font-size: 50px;
+    text-align: center;
+    padding: 10%;
+}
+.footer{
+    padding: 5%;
+}
+footer ul{
+    width: 90%;
+    padding: 5% 0px;
+    margin: auto;
+}
+footer li{
+    text-align: center;
+    list-style: none;
+    padding: 5px;
+}
+
+/* ----Registro---- */
+.signup h2{
+    padding-top: 60px;
+}
+
+
+/* ----Conectado---- */
+.citas form select,
+.citas form textarea{
+    width: 50%;
+}
+
+/* ----Admin---- */
+th{
+    width: 100px;
+}
+.admin td{
+    width: 100px;
+    word-wrap: break-word;  
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+/* -------------    1280p    ---------- */
+
+@media (min-width: 1280px){
+
+    .marco{
+        width: 80%;
+        margin: auto;
+    }
+
+    /* Popup */
+    .popup{
+        width: 30vw;
+    }
+
+    /* Header */
+    header{
+        padding: 0px;
+    }
+    .logo{
+        font-size: 70px;
+    }
+    .btn{
+        padding: 2px;
+    }
+    .login{
+        margin-right: 20px;
+    }
+
+    /* ----Registro---- */
+    .signup h2,
+    .signup input{
+        font-size: 30px;
+    }
+    .signup button{
+        font-size: 20px;
+    }
+
+    /* ----Conectado---- */
+    td{
+        width: 300px;
+    }
+
+    /* ----Admin---- */
+    .admin td{
+        width: 180px;
+        word-wrap: break-word;  
+    }
+}
+
+
+
+
+
+
+
+
+
+/* -------------    1920p    ---------- */
+
+@media (min-width: 1920px){
+
+    .btn{
+        padding: 5px;
+        font-size: 30px;
+    }
+
+    /* Popup */
+    .popup{
+        width: 20vw;
+    }
+    .popup h2,
+    .popup p{
+        font-size: 30px;
+    }
+    .popup input{
+        font-size: 20px;
+        display: block;
+        margin: 10px auto;
+        border-style: none;
+        border: 1px solid black;
+    }
+
+    /* Main */
+    .main h1{
+        font-size: 80px;
+        text-align: center;
+    }
+    .main p{
+        font-size: 50px;
+    }
+    
+    /* ----Sobre mi---- */
+    .sobremi h1{
+        font-size: 100px;
+        position: absolute;
+        top: -35px;
+        right: 15%;
+    }
+    .sobremi figure img{
+        width: 600px;
+        display: block;
+        margin: auto;
+    }
+    .sobremi h2{
+        font-size: 55px;
+    }
+    .sobremi p{
+        padding: 2%;
+        font-size: 30px;
+    }
+
+    /* Tarifas */
+    .card{
+        height: 510px;
+    }
+    .card h3{
+        font-size: 25px;
+    }
+    .card h4{
+        font-size: 20px;
+    }
+    .card p{
+        font-size: 23px;
+        height: 130px;
+    }
+    
+    /* Footer */
+    .footer{
+        /* flex */
+        display: flex;
+        justify-content: center;
+    }
+    footer li{
+        font-size: 20px;
+    }
+    
+}
